@@ -28,4 +28,8 @@ print (f"la velocidad despues de frenar {coche.velocidad}")
 
 cocheVolador=AutomovilVolador("gris","delorean",50, 50)
 
-print (f"el automovil esta volando? {coche.esta_volando})
+print (f"el automovil esta volando? {cocheVolador.esta_volando}")
+
+cocheVolador.aterriza()
+
+print (f"el automovil esta volando? {cocheVolador.esta_volando}")
