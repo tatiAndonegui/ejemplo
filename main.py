@@ -1,19 +1,12 @@
-class Automovil: #clase Automovil
-  ruedas=4 #atributos de la clase
-  def __init__(self,color, marca, aceleracion, velocidad):
-    self.color=color
-    self.marca=marca
-    self.aceleracion=aceleracion
-    self.velocidad=velocidad
+from automovil import Automovil
+from automovilVolador import AutomovilVolador
 
-  def acelera(self):
-    self.velocidad=self.velocidad+self.aceleracion
 
-  def frena(self):
-    self.velocidad=self.velocidad-self.aceleracion
-    
+#creacion de un automovil    
 coche=Automovil("amarillo","Audi",50, 50)
 
+
+#Muestro lo que el automovil puede hacer 
 print(coche.ruedas)
 print(coche.aceleracion)
 
@@ -29,3 +22,10 @@ print (f"la velocidad despues de acelerar {coche.velocidad}")
 coche.frena()
 
 print (f"la velocidad despues de frenar {coche.velocidad}")
+
+
+#creacion de un automovil Volador
+
+cocheVolador=AutomovilVolador("gris","delorean",50, 50)
+
+print (f"el automovil esta volando? {coche.esta_volando})
