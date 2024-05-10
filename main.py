@@ -1,5 +1,8 @@
 from automovil import Automovil
 from automovilVolador import AutomovilVolador
+from modulo.operacion import operacion
+
+operacion.sumar(1,2)
 
 
 #creacion de un automovil    
