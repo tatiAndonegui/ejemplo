@@ -2,6 +2,7 @@ from clases.automovil import Automovil
 from clases.automovilVolador import AutomovilVolador
 from modulo.operacion import operacion
 
+#creo la suma
 operacion.sumar(1,2)
 print (f"la suma entre ambos numeros es {operacion.sumar}")
 
@@ -19,14 +20,8 @@ print(coche.aceleracion)
 
 coche.aceleracion=30
 print(coche.aceleracion)
-
-print (f"la aceleracion es de {coche.aceleracion}")
-
 coche.acelera()
-
 coche.frena()
-
-print (f"la velocidad despues de frenar {coche.velocidad}")
 
 
 #creacion de un automovil Volador
