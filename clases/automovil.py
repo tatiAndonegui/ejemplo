@@ -1,4 +1,4 @@
-from vehiculo import Vehiculo
+from clases.vehiculo import Vehiculo
 
 class Automovil(Vehiculo): 
   ruedas=4 
@@ -16,6 +16,7 @@ class Automovil(Vehiculo):
 
   def acelera(self):
     self.velocidad=self.velocidad+self.aceleracion
+    
 
   def frena(self):
     self.velocidad=self.velocidad-self.aceleracion

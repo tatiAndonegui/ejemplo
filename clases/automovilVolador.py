@@ -1,4 +1,4 @@
-from automovil import Automovil
+from clases.automovil import Automovil
 
 
 class AutomovilVolador(Automovil):
