@@ -6,6 +6,10 @@ from automovilVolador import AutomovilVolador
 coche=Automovil("amarillo","Audi",50, 50)
 
 
+coche.conducir()
+coche.volar()
+
+
 #Muestro lo que el automovil puede hacer 
 print(coche.ruedas)
 print(coche.aceleracion)
@@ -33,3 +37,6 @@ print (f"el automovil esta volando? {cocheVolador.esta_volando}")
 cocheVolador.aterriza()
 
 print (f"el automovil esta volando? {cocheVolador.esta_volando}")
+
+cocheVolador.conducir()
+cocheVolador.volar()

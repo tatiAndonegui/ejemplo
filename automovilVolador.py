@@ -9,8 +9,13 @@ class AutomovilVolador(Automovil):
 
         self.esta_volando = esta_volando
 
-    def vuela (self):
+
+    def conducir(self):
+      return print ("estoy conduciendo")
+  
+    def volar(self):
       self.esta_volando=True
+      return print ("este vehiculo vuela")
 
     def aterriza(self):
       self.esta_volando=False
