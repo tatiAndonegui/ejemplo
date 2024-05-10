@@ -8,7 +8,7 @@ class Automovil(Vehiculo):
     self.aceleracion=aceleracion
     self.velocidad=velocidad
 
-    #getters y setters
+    #getters y setters--CORREGIR COMO EN VEHICULO
 
     def get_color(self):
       return self.color
