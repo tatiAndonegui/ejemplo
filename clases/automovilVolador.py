@@ -9,7 +9,15 @@ class AutomovilVolador(Automovil):
 
         self.esta_volando = esta_volando
 
+    #getters y setters
 
+    def getEsta_volando(self):
+      return self.esta_volando
+    def setEsta_volando(self,esta_volando):
+      self.esta_volando=esta_volando
+
+
+    #Metodos
     def conducir(self):
       return print ("estoy conduciendo")
   
