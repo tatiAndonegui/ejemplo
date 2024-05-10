@@ -9,7 +9,7 @@ class AutomovilVolador(Automovil):
 
         self.esta_volando = esta_volando
 
-    #getters y setters
+    #getters y setters--CORREGIR COMO EN VEHICULO
 
     def getEsta_volando(self):
       return self.esta_volando

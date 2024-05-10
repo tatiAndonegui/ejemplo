@@ -10,22 +10,22 @@ class Automovil(Vehiculo):
 
     #getters y setters
 
-    def getColor(self):
+    def get_color(self):
       return self.color
-    def getMarca(self):
+    def get_marca(self):
       return self.marca
-    def getAceleracion(self):
+    def get_aceleracion(self):
       return self.aceleracion
-    def getVelocidad(self):
+    def get_velocidad(self):
       return self.velocidad
     
-    def setColor(self,color):
+    def set_color(self,color):
       self.color=color
-    def setMarca(self,marca):
+    def set_marca(self,marca):
         self.marca = marca
-    def setAceleracion(self,aceleracion):
+    def set_aceleracion(self,aceleracion):
       self.aceleracion = aceleracion
-    def setVelocidad(self,velocidad):
+    def set_velocidad(self,velocidad):
       self.velocidad =velocidad
 
   #Metodos
