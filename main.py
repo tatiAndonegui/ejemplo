@@ -1,6 +1,18 @@
+from clases.vehiculo import Vehiculo
 from clases.automovil import Automovil
 from clases.automovilVolador import AutomovilVolador
 from modulo.operacion import operacion
+
+
+
+#creo un vehiculo
+vehiculo1=Vehiculo(2020,"Renault")
+print(vehiculo1._anio)
+vehiculo1._anio=2022
+
+print(vehiculo1._anio)
+
+
 
 #creo la suma
 operacion.sumar(1,2)
