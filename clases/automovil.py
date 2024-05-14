@@ -15,12 +15,12 @@ class Automovil(Vehiculo):
     return print ("este vehiculo no vuela")
 
   def acelera(self):
-    self.velocidad=self.velocidad+self.aceleracion
-    return print ("este vehiculo acelero a: ", self.velocidad," km")
+    self.velocidad += self.aceleracion
+    return print ("este vehiculo acelero a: ", str(self.velocidad)," km")
     
-
   def frena(self):
     self.velocidad=self.velocidad-self.aceleracion
     return print ("este vehiculo despues de frenar se mantiene a la velocidad de: ", self.velocidad, " km")
+  
 
 
