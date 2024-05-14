@@ -22,3 +22,5 @@ class Automovil(Vehiculo):
   def frena(self):
     self.velocidad=self.velocidad-self.aceleracion
     return print ("este vehiculo despues de frenar se mantiene a la velocidad de: ", self.velocidad, " km")
+
+

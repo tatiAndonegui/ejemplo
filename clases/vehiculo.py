@@ -21,3 +21,12 @@ class Vehiculo(Transporte):
     def get_anio(self):
         return self._anio
 
+#Imprime informaciòn del automovil
+    def info(self):
+        print(self.color)
+        print(self.marca)
+        print(self.aceleracion)
+        print(self.velocidad)
+        print(self._anio)
+        print(self.__modelo)
+    
