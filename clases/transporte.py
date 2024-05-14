@@ -8,7 +8,7 @@ class Transporte(ABC):
         self.velocidad=velocidad
 
 
-    #getters y setters--CORREGIR COMO EN VEHICULO
+    #getters y setters
     
     def set_color(self,color):
         self.color=color

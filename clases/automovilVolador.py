@@ -3,10 +3,8 @@ from clases.automovil import Automovil
 
 class AutomovilVolador(Automovil):
     ruedas = 6
-
-    def __init__(self,color, marca, aceleracion, velocidad,esta_volando=True):
-        super().__init__(color, marca, aceleracion, velocidad)
-
+    def __init__(self,color, marca, aceleracion, velocidad,anio,modelo,esta_volando=True):
+        super().__init__(color, marca, aceleracion, velocidad,anio,modelo,)
         self.esta_volando = esta_volando
 
     #getters y setters--CORREGIR COMO EN VEHICULO
