@@ -5,8 +5,6 @@ class Automovil(Vehiculo):
   def __init__(self,color, marca, aceleracion, velocidad,anio,modelo):
         super().__init__(color, marca, aceleracion, velocidad,anio,modelo,)
         
-
-    
   #Metodos
   def conducir(self):
     return print ("estoy conduciendo")
@@ -22,5 +20,8 @@ class Automovil(Vehiculo):
     self.velocidad=self.velocidad-self.aceleracion
     return print ("este vehiculo despues de frenar se mantiene a la velocidad de: ", self.velocidad, " km")
   
+  #Imprime los datos del automovil
+  def datos(self):
+    print("Las ruedas del automovil son", self.ruedas)
 
 

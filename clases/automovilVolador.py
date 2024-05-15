@@ -26,4 +26,9 @@ class AutomovilVolador(Automovil):
     def aterriza(self):
       self.esta_volando=False
       return print ("este vehiculo ha aterrizado")
+    
+
+    #Imprime los datos del automovil
+    def datos(self):
+      print("Las ruedas del automovil volador son", self.ruedas)
 

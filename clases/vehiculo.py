@@ -3,7 +3,7 @@ from clases.transporte import Transporte
 class Vehiculo(Transporte):
 
     #creo anio como protected (1 guion) y modelo como privado (dos guiones)
-    def __init__(self,color, marca, aceleracion, velocidad,anio,modelo,):
+    def __init__(self,color, marca, aceleracion, velocidad,anio,modelo):
         super().__init__(color, marca, aceleracion, velocidad)
         self._anio=anio
         self.__modelo=modelo
@@ -21,12 +21,11 @@ class Vehiculo(Transporte):
     def get_anio(self):
         return self._anio
 
-#Imprime informaciòn del automovil
-    def info(self):
-        print(self.color)
-        print(self.marca)
-        print(self.aceleracion)
-        print(self.velocidad)
-        print(self._anio)
-        print(self.__modelo)
-    
+#Imprime los datos del vehiculo
+    def datos(self):
+        print("El color del vehiculo es", self.color)
+        print("La marca del vehiculo es",self.marca)
+        print("La aceleración actual del vehiculo es",self.aceleracion)
+        print("La velocidad actual del vehiculo es",self.velocidad)
+        print("El año del vehiculo es",self._anio)
+        print("El modelo del vehiculo es",self.__modelo)
