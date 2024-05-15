@@ -29,10 +29,10 @@ class Transporte(ABC):
         return self.velocidad
 
 #Metodos Abstractos   
-    @abstractmethod 
-    def volar(self):
+    #@abstractmethod 
+    #def volar(self):
         pass
-    def conducir(self):
+    #def conducir(self):
         pass 
 
 #Metodos

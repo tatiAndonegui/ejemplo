@@ -1,7 +1,6 @@
 from clases.transporte import Transporte
 
 class Vehiculo(Transporte):
-
     #creo anio como protected (1 guion) y modelo como privado (dos guiones)
     def __init__(self,color, marca, aceleracion, velocidad,anio,modelo):
         super().__init__(color, marca, aceleracion, velocidad)
@@ -10,7 +9,6 @@ class Vehiculo(Transporte):
 
     
     #getters y setters
-
     def set_anio(self,nuevo_anio):
         self._anio=nuevo_anio
     def set_modelo(self,nuevo_modelo):

@@ -55,8 +55,8 @@ cocheVolador.datos()
 
 
 #creo un vehiculo
-#vehiculo1=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
-#vehiculo1.datos()
+vehiculo1=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
+vehiculo1.datos()
 #print(vehiculo1._anio)
 #vehiculo1._anio=2022
 
