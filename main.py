@@ -73,5 +73,17 @@ import sqlite3
 print("conecto a mi base de datos")
 conexion=sqlite3.connect("base_datos/mi_base.bd")
 cursor=conexion.cursor()
-cursor.execute('CREATE TABLE IF NOT EXISTS vehiculo(id INTEGER PRIMARY KEY AUTOINCREMENT,color TEXT, marca TEXT, aceleracion INTEGER,velocidad INTEGER, anio INTEGER,modelo TEXT)')
-conexion.commit()
+#cursor.execute('''CREATE TABLE IF NOT EXISTS vehiculo(id INTEGER PRIMARY KEY AUTOINCREMENT,color TEXT, marca TEXT, aceleracion INTEGER,velocidad INTEGER, anio INTEGER,modelo TEXT)''')
+#conexion.commit()
+vehiculo1=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
+cursor.execute('''INSERT INTO vehiculo (color,marca,aceleracion,velocidad,anio,modelo) VALUES(?,?,?,?,?,?)''',
+            (vehiculo1.get_color(), vehiculo1.get_marca(),vehiculo1.get_aceleracion(), vehiculo1.get_velocidad(),vehiculo1.get_anio(),vehiculo1.get_modelo()))
+
+cursor.execute('''SELECT * FROM vehiculo''')
+resultados=cursor.fetchall()
+
+for file in resultados:
+    print (file)
+
+cursor.close()
+conexion.close()
