@@ -76,18 +76,16 @@ print("****conecto a mi base de datos****")
 #cursor=conexion.cursor()
 conexion=Conexion(nombre_bd="base_datos/mi_base.bd")
 
-conexion.crear
+conexion.crear_tabla_vehiculos()
 
-vehiculo1=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
-cursor.execute('''INSERT INTO vehiculo (color,marca,aceleracion,velocidad,anio,modelo) VALUES(?,?,?,?,?,?)''',
-            (vehiculo1.get_color(), vehiculo1.get_marca(),vehiculo1.get_aceleracion(), vehiculo1.get_velocidad(),vehiculo1.get_anio(),vehiculo1.get_modelo()))
+vehiculo=vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
+conexion.insertar_vehiculo(vehiculo=vehiculo)
 
 cursor.execute('''SELECT * FROM vehiculo''')
-resultados=cursor.fetchall()
+#resultados=cursor.fetchall()
 
-for file in resultados:
-    print (file)
+#for file in resultados:
+    #print (file)
 
-cursor.close()
-conexion.close()
+
 
