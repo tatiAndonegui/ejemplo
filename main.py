@@ -1,7 +1,8 @@
 from clases.vehiculo import Vehiculo
 from clases.automovil import Automovil
 from clases.automovilVolador import AutomovilVolador
-from modulo.operacion import operacion
+from modulo.operacion import Operacion
+from base_datos.conexion import Conexion
 import sqlite3
 
 
@@ -70,9 +71,12 @@ import sqlite3
 #print (f"la suma entre ambos numeros es {operacion.sumar}")
 
 #Sqlite3
-print("conecto a mi base de datos")
-conexion=sqlite3.connect("base_datos/mi_base.bd")
-cursor=conexion.cursor()
+print("****conecto a mi base de datos****")
+#conexion=sqlite3.connect("base_datos/mi_base.bd")
+#cursor=conexion.cursor()
+conexion=Conexion(nombre_bd="base_datos/mi_base.bd")
+
+conexion.crear
 
 vehiculo1=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
 cursor.execute('''INSERT INTO vehiculo (color,marca,aceleracion,velocidad,anio,modelo) VALUES(?,?,?,?,?,?)''',
