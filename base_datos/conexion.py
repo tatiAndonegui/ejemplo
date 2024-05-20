@@ -11,8 +11,22 @@ class Conexion:
     
     def insertar_vehiculo(self,vehiculo):
         self.cursor.execute('''INSERT INTO vehiculo (color,marca,aceleracion,velocidad,anio,modelo) VALUES(?,?,?,?,?,?)''',
-        (vehiculo.get_color(), vehiculo.get_marca(),vehiculo.get_aceleracion(), vehiculo.get_velocidad(),vehiculo.get_anio(),vehiculo.get_modelo()))
+        (vehiculo.get_color(),
+            vehiculo.get_marca(),
+            vehiculo.get_aceleracion(), vehiculo.get_velocidad(),vehiculo.get_anio(),
+            vehiculo.get_modelo()))
+        self.conexion.commit()
 
+    def obtener_vehiculos(self):
+        vehiculos=self.cursor.execute('''SELECT * FROM vehiculo''')
+        return vehiculos
+    
+    def eliminar_vehiculos(self,id):
+        self.cursor.execute('''DELETE FROM vehiculo WHERE id=?''',(id,))
+        self.conexion.commit()
+
+    def editar_vehiculos(self,id):
+        self.cursor.execute('''UPDATE vehiculo SET color=?,marca=?,aceleracion=?,velocidad=?,anio=?,modelo=? WHERE id=?''',(id,))
         self.conexion.commit()
 
     def cerrar_conexion(self):

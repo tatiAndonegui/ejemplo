@@ -78,14 +78,18 @@ conexion=Conexion(nombre_bd="base_datos/mi_base.bd")
 
 conexion.crear_tabla_vehiculos()
 
-vehiculo=vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
+vehiculo=Vehiculo("azul","chevrolet",10, 70, 2004,"corsa")
 conexion.insertar_vehiculo(vehiculo=vehiculo)
 
-cursor.execute('''SELECT * FROM vehiculo''')
-#resultados=cursor.fetchall()
+vehiculo=conexion.obtener_vehiculos()
+for vehiculo in vehiculos:
+    print(vehiculo)
 
-#for file in resultados:
-    #print (file)
+vehiculo=Vehiculo("amarillo","nissan",100, 200, 2024,"sentra")
+
+conexion.eliminar_vehiculos(1)
+
+conexion.cerrar_conexion()
 
 
 
